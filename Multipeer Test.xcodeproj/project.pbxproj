@@ -15,6 +15,7 @@
 		938711B325E89A3700F8A8E8 /* Multipeer_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 938711B125E89A3700F8A8E8 /* Multipeer_Test.xcdatamodeld */; };
 		938711BE25E89A3800F8A8E8 /* Multipeer_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938711BD25E89A3800F8A8E8 /* Multipeer_TestTests.swift */; };
 		938711C925E89A3800F8A8E8 /* Multipeer_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938711C825E89A3800F8A8E8 /* Multipeer_TestUITests.swift */; };
+		938711DA25E8A0AE00F8A8E8 /* multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938711D925E8A0AE00F8A8E8 /* multipeer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		938711C425E89A3800F8A8E8 /* Multipeer TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multipeer TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938711C825E89A3800F8A8E8 /* Multipeer_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer_TestUITests.swift; sourceTree = "<group>"; };
 		938711CA25E89A3800F8A8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938711D925E8A0AE00F8A8E8 /* multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multipeer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		938711A525E89A3300F8A8E8 /* Multipeer Test */ = {
 			isa = PBXGroup;
 			children = (
+				938711D925E8A0AE00F8A8E8 /* multipeer.swift */,
 				938711A625E89A3300F8A8E8 /* Multipeer_TestApp.swift */,
 				938711A825E89A3300F8A8E8 /* ContentView.swift */,
 				938711AA25E89A3700F8A8E8 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938711DA25E8A0AE00F8A8E8 /* multipeer.swift in Sources */,
 				938711B025E89A3700F8A8E8 /* Persistence.swift in Sources */,
 				938711B325E89A3700F8A8E8 /* Multipeer_Test.xcdatamodeld in Sources */,
 				938711A925E89A3300F8A8E8 /* ContentView.swift in Sources */,
@@ -427,6 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KVH9X2L53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Multipeer Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -434,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Multipeer-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = multipeer.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KVH9X2L53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Multipeer Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -455,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Multipeer-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = multipeer.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
