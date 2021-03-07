@@ -23,7 +23,7 @@ class TransferService : NSObject, ObservableObject {
     public var PeerId = MCPeerID(displayName: UIDevice.current.name)
     public var serviceAdvertiser : MCNearbyServiceAdvertiser?
     public var session: MCSession
-    @Published public var sentText: String = "1"
+    @Published public var sentText: String = ""
 
     override init() {
         session = MCSession(peer: PeerId, securityIdentity: nil, encryptionPreference: .required)
@@ -97,11 +97,13 @@ extension TransferService : MCSessionDelegate {
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+        DispatchQueue.main.async {
         if let datastr = String(data: data, encoding: .utf8){
-            sentText = datastr
+        
+            self.sentText = datastr
             os_log("Received: \(datastr)")
             os_log("output: \(self.sentText)")
-        }
+        }}
         
         
     }

@@ -18,14 +18,18 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
+            HStack{
+            Text("Received Text:")
             Text("\(transferservice.sentText)")
+            }
             TextField("Enter your text", text:$input)
         
             Button("Send Text"){
+                DispatchQueue.main.async {
                 if  let textData = input.data(using: .utf8) {
                     try? transferservice.session.send(textData, toPeers: transferservice.session.connectedPeers, with: .reliable)
                 os_log("Sending the data:\(textData)")
-                }}
+                }}}
         
         Button("Invite"){
             transferservice.invite()
